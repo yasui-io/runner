@@ -52,7 +52,10 @@ jobs:
           set -eu
           NODE_VERSION="$(grep '^NODE_VERSION=' install/runner.sh | cut -d'"' -f2)"
           SHASUMS="$(curl -fsSL "https://nodejs.org/dist/${NODE_VERSION}/SHASUMS256.txt")"
-          pin() { echo "$SHASUMS" | grep " node-${NODE_VERSION}-$1.tar.gz\$" | cut -d' ' -f1; }
+          pin() {
+            printf '%s\n' "$SHASUMS" |
+              awk -v name="node-${NODE_VERSION}-$1.tar.gz" '$2 == name { print $1; found=1 } END { if (!found) exit 1 }'
+          }
           sed -i \
             -e "s|__RELEASE_YML_PIN_DARWIN_ARM64__|$(pin darwin-arm64)|" \
             -e "s|__RELEASE_YML_PIN_DARWIN_X64__|$(pin darwin-x64)|" \
