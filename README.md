@@ -17,13 +17,6 @@ Two packages:
 curl -fsSL https://yasui.io/runner.sh | sh
 ```
 
-## Monorepo staging note
-
-This workspace is destined for the standalone `yasui-io/runner` repo. It is temporarily
-staged inside the Yasui monorepo at `./runner/` while the agents system lands, but it is
-fully self-contained: it is **not** part of the monorepo's root workspaces and has
-**zero imports from `apps/*`** (enforced at extraction). Do not add any.
-
 ## Development
 
 ```sh
@@ -31,5 +24,12 @@ bun install
 bun run typecheck
 bun run test
 ```
+
+## Documentation
+
+- [Protocol](docs/protocol.md)
+- [Security](docs/security.md)
+- [Self-hosting](docs/self-hosting.md)
+- [Publishing releases](docs/releasing.md)
 
 License: Apache-2.0.

@@ -36,6 +36,17 @@ jobs:
       - name: build publishable packages
         run: bun run build
 
+      - name: validate tag and package versions
+        run: |
+          set -eu
+          VERSION="${GITHUB_REF_NAME#v}"
+          PROTOCOL_VERSION="$(node -p "require('./packages/runner-protocol/package.json').version")"
+          RUNNER_VERSION="$(node -p "require('./packages/runner/package.json').version")"
+          RUNNER_PROTOCOL_VERSION="$(node -p "require('./packages/runner/package.json').dependencies['@yasui.io/runner-protocol']")"
+          [ "$VERSION" = "$PROTOCOL_VERSION" ]
+          [ "$VERSION" = "$RUNNER_VERSION" ]
+          [ "$VERSION" = "$RUNNER_PROTOCOL_VERSION" ]
+
       - name: pin-node-hashes — regenerate runner.sh sha256 pins
         run: |
           set -eu
@@ -51,12 +62,24 @@ jobs:
           grep -q "__RELEASE_YML_PIN" install/runner.sh && { echo "pin substitution failed" >&2; exit 1; } || true
 
       - name: publish @yasui.io/runner-protocol
-        run: npm publish --provenance --access public
+        run: |
+          VERSION="${GITHUB_REF_NAME#v}"
+          if npm view "@yasui.io/runner-protocol@$VERSION" version >/dev/null 2>&1; then
+            echo "@yasui.io/runner-protocol@$VERSION is already published; skipping"
+          else
+            npm publish --provenance --access public
+          fi
         working-directory: packages/runner-protocol
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       - name: publish @yasui.io/runner
-        run: npm publish --provenance --access public
+        run: |
+          VERSION="${GITHUB_REF_NAME#v}"
+          if npm view "@yasui.io/runner@$VERSION" version >/dev/null 2>&1; then
+            echo "@yasui.io/runner@$VERSION is already published; skipping"
+          else
+            npm publish --provenance --access public
+          fi
         working-directory: packages/runner
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
