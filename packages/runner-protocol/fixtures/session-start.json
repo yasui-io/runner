@@ -1,0 +1,31 @@
+{
+  "direction": "server->runner",
+  "frame": {
+    "id": "cmd_s9aaaa",
+    "type": "session.start",
+    "sessionId": "ags_c1abc",
+    "ts": "2026-07-06T18:02:35.000Z",
+    "payload": {
+      "harness": "claude-code",
+      "project": {
+        "path": "/Users/kai/dev/acme-api",
+        "projectId": "prj_ck3abcd"
+      },
+      "worktree": null,
+      "model": "claude-sonnet-4-5",
+      "contextWindowTokens": 200000,
+      "permissionMode": "default",
+      "permissionTimeoutMinutes": 15,
+      "systemPromptAppend": null,
+      "maxTurns": 80,
+      "maxBudgetUsd": 10,
+      "resumeHarnessSessionId": null,
+      "inference": {
+        "baseUrl": "https://api.yasui.io",
+        "authToken": "yk_live_agsn_9tYbEXAMPLE",
+        "expiresAt": "2026-07-07T18:02:00Z"
+      }
+    }
+  },
+  "expect": "accept"
+}

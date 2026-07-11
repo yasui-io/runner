@@ -1,0 +1,21 @@
+{
+  "direction": "runner->server",
+  "frame": {
+    "id": "f_bad00003",
+    "type": "hello",
+    "ts": "2026-07-06T18:02:11.480Z",
+    "payload": {
+      "runnerVersion": "0.3.1",
+      "host": {
+        "hostname": "atlas",
+        "os": "darwin",
+        "arch": "arm64",
+        "kind": "laptop"
+      },
+      "harnesses": [],
+      "caps": [],
+      "maxConcurrentSessions": 1
+    }
+  },
+  "expect": "reject"
+}

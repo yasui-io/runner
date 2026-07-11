@@ -1,0 +1,13 @@
+{
+  "direction": "server->runner",
+  "frame": {
+    "id": "cmd_u60abcd",
+    "type": "runner.update",
+    "ts": "2026-07-06T18:40:00.000Z",
+    "payload": {
+      "targetVersion": "0.4.0",
+      "deadline": "2026-07-06T19:40:00.000Z"
+    }
+  },
+  "expect": "accept"
+}

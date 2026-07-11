@@ -1,0 +1,18 @@
+{
+  "direction": "server->runner",
+  "frame": {
+    "id": "cmd_m99abcd",
+    "type": "session.message",
+    "sessionId": "ags_c1abc",
+    "seq": 517,
+    "ts": "2026-07-06T18:12:00.000Z",
+    "payload": {
+      "eventId": "ev_u517",
+      "text": "Look at this screenshot.",
+      "attachments": [
+        "data:image/png;base64,iVBOR…"
+      ]
+    }
+  },
+  "expect": "reject"
+}

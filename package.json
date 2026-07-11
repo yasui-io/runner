@@ -1,0 +1,14 @@
+{
+  "name": "yasui-runner-workspace",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "typecheck": "bun --cwd packages/runner-protocol typecheck && bun --cwd packages/runner-protocol build && bun --cwd packages/runner typecheck",
+    "test": "bun --cwd packages/runner-protocol build && bun --cwd packages/runner-protocol test && bun --cwd packages/runner test",
+    "build": "bun --cwd packages/runner-protocol build && bun --cwd packages/runner build"
+  }
+}

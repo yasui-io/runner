@@ -1,0 +1,28 @@
+{
+  "direction": "runner->server",
+  "frame": {
+    "id": "f_bad00004",
+    "type": "hello",
+    "ts": "2026-07-06T18:02:11.480Z",
+    "payload": {
+      "protocolVersion": 1,
+      "minProtocolVersion": 1,
+      "runnerVersion": "0.3.1",
+      "host": {
+        "hostname": "atlas",
+        "os": "darwin",
+        "arch": "arm64",
+        "kind": "mainframe"
+      },
+      "harnesses": [
+        {
+          "harness": "cursor",
+          "version": "1.0.0"
+        }
+      ],
+      "caps": [],
+      "maxConcurrentSessions": 1
+    }
+  },
+  "expect": "reject"
+}

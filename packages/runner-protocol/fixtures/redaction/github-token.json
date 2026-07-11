@@ -1,0 +1,15 @@
+{
+  "label": "github-token",
+  "cases": [
+    {
+      "name": "ghp classic token",
+      "input": "remote: https://ghp_AbCdEfGhIjKlMnOpQrStUvWxYz0123456789@github.com/acme/api.git",
+      "expected": "remote: https://[redacted:github-token]@github.com/acme/api.git"
+    },
+    {
+      "name": "ghs app token",
+      "input": "token ghs_AbCdEfGhIjKlMnOpQrStUvWxYz0123456789",
+      "expected": "token [redacted:github-token]"
+    }
+  ]
+}

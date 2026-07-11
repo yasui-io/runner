@@ -1,0 +1,19 @@
+{
+  "direction": "server->runner",
+  "expect": "accept",
+  "frame": {
+    "id": "f_claude_settings_request_01",
+    "type": "claude.settings.request",
+    "ts": "2026-07-10T17:00:00.000Z",
+    "payload": {
+      "opId": "op_claude_settings_01",
+      "action": "update",
+      "target": "native-user",
+      "patch": [
+        { "op": "set", "path": ["permissions", "defaultMode"], "value": "plan" }
+      ],
+      "expectedRevision": null,
+      "allowMalformedReset": false
+    }
+  }
+}

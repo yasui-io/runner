@@ -1,0 +1,28 @@
+{
+  "direction": "server->runner",
+  "frame": {
+    "id": "f_srv1a2b3c",
+    "type": "hello.ack",
+    "ts": "2026-07-06T18:02:11.520Z",
+    "payload": {
+      "protocolVersion": 1,
+      "runnerId": "run_ck2abcd",
+      "heartbeatIntervalMs": 20000,
+      "limits": {
+        "maxFrameBytes": 1048576,
+        "maxToolOutputBytes": 65536,
+        "maxEventBytes": 262144,
+        "deltaFlushMs": 2000
+      },
+      "resume": [
+        {
+          "sessionId": "ags_c1abc",
+          "lastPersistedSeq": 512,
+          "state": "live"
+        }
+      ],
+      "serverTime": "2026-07-06T18:02:11.519Z"
+    }
+  },
+  "expect": "accept"
+}

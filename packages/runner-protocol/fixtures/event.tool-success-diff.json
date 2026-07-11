@@ -1,0 +1,42 @@
+{
+  "direction": "runner->server",
+  "frame": {
+    "id": "f_e446cccc",
+    "type": "event",
+    "sessionId": "ags_c1abc",
+    "ts": "2026-07-06T18:03:14.000Z",
+    "payload": {
+      "event": {
+        "id": "ev_tl12",
+        "at": "2026-07-06T18:03:12.000Z",
+        "kind": "tool",
+        "final": true,
+        "call": {
+          "id": "toolu_01DeF",
+          "name": "Edit",
+          "summary": "src/router.ts",
+          "status": "success",
+          "durationMs": 310,
+          "diff": {
+            "path": "src/router.ts",
+            "lines": [
+              {
+                "kind": "ctx",
+                "text": "import { Hono } from 'hono'"
+              },
+              {
+                "kind": "del",
+                "text": "import { registerMock } from './test-utils'"
+              },
+              {
+                "kind": "add",
+                "text": "import { z } from 'zod'"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "expect": "accept"
+}

@@ -1,0 +1,31 @@
+{
+  "direction": "runner->server",
+  "frame": {
+    "id": "f_gr50mmmm",
+    "type": "git.result",
+    "sessionId": "ags_c1abc",
+    "ts": "2026-07-06T18:06:00.000Z",
+    "payload": {
+      "opId": "op_ck5abc",
+      "op": "status",
+      "ok": true,
+      "result": {
+        "branch": "main",
+        "upstream": "origin/main",
+        "dirty": true,
+        "ahead": 1,
+        "behind": 0,
+        "staged": [
+          "src/router.ts"
+        ],
+        "unstaged": [
+          "src/router.test.ts"
+        ],
+        "untracked": [
+          "notes.md"
+        ]
+      }
+    }
+  },
+  "expect": "accept"
+}

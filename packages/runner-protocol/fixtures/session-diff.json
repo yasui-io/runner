@@ -1,0 +1,30 @@
+{
+  "direction": "runner->server",
+  "frame": {
+    "id": "f_df31kkkk",
+    "type": "session.diff",
+    "sessionId": "ags_c1abc",
+    "ts": "2026-07-06T18:04:25.000Z",
+    "payload": {
+      "additions": 128,
+      "deletions": 41,
+      "files": [
+        {
+          "path": "src/router.ts",
+          "status": "modified",
+          "additions": 96,
+          "deletions": 30,
+          "hunks": []
+        },
+        {
+          "path": "src/router.test.ts",
+          "status": "added",
+          "additions": 32,
+          "deletions": 11,
+          "hunks": []
+        }
+      ]
+    }
+  },
+  "expect": "accept"
+}

@@ -1,0 +1,12 @@
+{
+  "direction": "server->runner",
+  "frame": {
+    "id": "cmd_ps58abc",
+    "type": "project.scan",
+    "ts": "2026-07-06T18:07:00.000Z",
+    "payload": {
+      "opId": "op_ck8abc"
+    }
+  },
+  "expect": "accept"
+}

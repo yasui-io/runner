@@ -1,0 +1,19 @@
+{
+  "direction": "server->runner",
+  "frame": {
+    "id": "cmd_g57abcd",
+    "type": "git.request",
+    "sessionId": "ags_c1abc",
+    "ts": "2026-07-06T18:30:00.000Z",
+    "payload": {
+      "opId": "op_ckcabc",
+      "op": "worktree.remove",
+      "args": {
+        "path": "/Users/kai/dev/acme-api",
+        "name": "fix-router",
+        "force": false
+      }
+    }
+  },
+  "expect": "accept"
+}

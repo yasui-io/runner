@@ -1,0 +1,10 @@
+{
+  "label": "yasui-runner-token",
+  "cases": [
+    {
+      "name": "runner token in cat output",
+      "input": "\"token\": \"yr_Vq3nT8aBcDeFgHiJkLmNoPqRsTuVwXyZ012\",",
+      "expected": "\"token\": \"[redacted:yasui-runner-token]\","
+    }
+  ]
+}

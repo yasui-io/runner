@@ -1,0 +1,15 @@
+{
+  "label": "openai-key",
+  "cases": [
+    {
+      "name": "legacy T3BlbkFJ key",
+      "input": "key sk-AbCdEfGhIjKlMnOpQrStT3BlbkFJAbCdEfGhIjKlMnOpQrSt found",
+      "expected": "key [redacted:openai-key] found"
+    },
+    {
+      "name": "project key",
+      "input": "sk-proj-AbCdEfGhIjKlMnOpQrStUvWxYz012345",
+      "expected": "[redacted:openai-key]"
+    }
+  ]
+}

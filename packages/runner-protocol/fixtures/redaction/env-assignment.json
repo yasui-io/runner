@@ -1,0 +1,25 @@
+{
+  "label": "env-assignment",
+  "cases": [
+    {
+      "name": "export keeps the var name",
+      "input": "export DATABASE_PASSWORD=hunter2",
+      "expected": "export DATABASE_PASSWORD=[redacted:env-assignment]"
+    },
+    {
+      "name": "plain assignment with API_KEY",
+      "input": "STRIPE_API_KEY=sk_live_abc123",
+      "expected": "STRIPE_API_KEY=[redacted:env-assignment]"
+    },
+    {
+      "name": "indented TOKEN assignment in .env dump",
+      "input": "  MY_SERVICE_TOKEN = t0ps3cret",
+      "expected": "  MY_SERVICE_TOKEN = [redacted:env-assignment]"
+    },
+    {
+      "name": "multiline: only secret lines rewritten",
+      "input": "PORT=3000\nSESSION_SECRET=abcdef\nHOST=0.0.0.0",
+      "expected": "PORT=3000\nSESSION_SECRET=[redacted:env-assignment]\nHOST=0.0.0.0"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "direction": "runner->server",
+  "frame": {
+    "id": "f_st01hhhh",
+    "type": "session.started",
+    "sessionId": "ags_c1abc",
+    "ts": "2026-07-06T18:02:38.000Z",
+    "payload": {
+      "startId": "cmd_s9aaaa",
+      "harnessSessionId": "6f1c2a4e-9b7d-4c31-a2f8-0e5d6c7b8a90",
+      "model": "claude-sonnet-4-5",
+      "permissionMode": "default",
+      "slashCommands": [
+        "compact",
+        "clear",
+        "context",
+        "usage",
+        "code-review"
+      ],
+      "tools": [
+        "Bash",
+        "Read",
+        "Edit",
+        "Write",
+        "Glob",
+        "Grep",
+        "Task"
+      ],
+      "contextWindowTokens": 200000,
+      "cwd": "/Users/kai/dev/acme-api",
+      "gitBranch": "main",
+      "worktree": null
+    }
+  },
+  "expect": "accept"
+}

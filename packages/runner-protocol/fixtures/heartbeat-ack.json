@@ -1,0 +1,10 @@
+{
+  "direction": "server->runner",
+  "frame": {
+    "id": "f_hba1d4e5f",
+    "type": "heartbeat.ack",
+    "ts": "2026-07-06T18:02:31.502Z",
+    "payload": {}
+  },
+  "expect": "accept"
+}

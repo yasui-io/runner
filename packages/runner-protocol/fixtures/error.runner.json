@@ -1,0 +1,17 @@
+{
+  "direction": "runner->server",
+  "frame": {
+    "id": "f_er01qqqq",
+    "type": "error",
+    "sessionId": "ags_c1abc",
+    "ts": "2026-07-06T18:08:00.000Z",
+    "payload": {
+      "code": "yasui_runner_git_failed",
+      "message": "git worktree remove failed",
+      "details": {
+        "stderr": "fatal: working trees containing submodules cannot be moved or removed"
+      }
+    }
+  },
+  "expect": "accept"
+}

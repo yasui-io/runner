@@ -1,0 +1,15 @@
+{
+  "direction": "runner->server",
+  "frame": {
+    "id": "f_ca01pppp",
+    "type": "cmd.ack",
+    "ts": "2026-07-06T18:04:10.050Z",
+    "payload": {
+      "ids": [
+        "cmd_m41abcd",
+        "cmd_x42abcd"
+      ]
+    }
+  },
+  "expect": "accept"
+}

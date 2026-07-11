@@ -1,0 +1,27 @@
+{
+  "direction": "runner->server",
+  "frame": {
+    "id": "f_e454eeee",
+    "type": "event",
+    "sessionId": "ags_c1abc",
+    "ts": "2026-07-06T18:05:30.000Z",
+    "payload": {
+      "event": {
+        "id": "ev_pm32",
+        "at": "2026-07-06T18:05:29.000Z",
+        "kind": "permission",
+        "tool": "Write",
+        "request": "Write to src/router.test.ts",
+        "status": "pending",
+        "toolUseId": "toolu_01VwX",
+        "input": {
+          "file_path": "/Users/kai/dev/acme-api/src/router.test.ts",
+          "content": "…"
+        },
+        "expiresAt": "2026-07-06T18:20:29.000Z",
+        "agentId": "ag_run01"
+      }
+    }
+  },
+  "expect": "accept"
+}

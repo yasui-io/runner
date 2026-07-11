@@ -1,0 +1,20 @@
+{
+  "direction": "runner->server",
+  "frame": {
+    "id": "f_e102aaaa",
+    "type": "event",
+    "sessionId": "ags_c1abc",
+    "ts": "2026-07-06T18:02:42.000Z",
+    "payload": {
+      "event": {
+        "id": "ev_x002",
+        "at": "2026-07-06T18:02:41.980Z",
+        "kind": "slash",
+        "command": "model",
+        "args": "claude-opus-4-8",
+        "clientId": "cl_3d4e5f"
+      }
+    }
+  },
+  "expect": "accept"
+}

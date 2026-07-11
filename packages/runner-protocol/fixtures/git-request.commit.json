@@ -1,0 +1,18 @@
+{
+  "direction": "server->runner",
+  "frame": {
+    "id": "cmd_g55abcd",
+    "type": "git.request",
+    "sessionId": "ags_c1abc",
+    "ts": "2026-07-06T18:06:15.000Z",
+    "payload": {
+      "opId": "op_ck9abc",
+      "op": "commit",
+      "args": {
+        "path": "/Users/kai/dev/acme-api",
+        "message": "Fix flaky router test\n\nCo-Authored-By: Claude <noreply@anthropic.com>"
+      }
+    }
+  },
+  "expect": "accept"
+}

@@ -1,0 +1,11 @@
+{
+  "label": "anthropic-key",
+  "cases": [
+    {
+      "name": "sk-ant key",
+      "input": "export OTHER=sk-ant-api03-AbCdEf-GhIjKlMnOpQrStUvWx_yz012345",
+      "expected": "export OTHER=[redacted:anthropic-key]",
+      "note": "OTHER does not match the env-assignment var-name list; the key shape fires"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "direction": "runner->server",
+  "frame": {
+    "id": "f_e450dddd",
+    "type": "event",
+    "sessionId": "ags_c1abc",
+    "ts": "2026-07-06T18:03:40.000Z",
+    "payload": {
+      "event": {
+        "id": "ev_ag01",
+        "at": "2026-07-06T18:03:35.000Z",
+        "kind": "agent",
+        "run": {
+          "id": "ag_run01",
+          "agentType": "Explore",
+          "task": "Find every import of test-utils across the repo",
+          "status": "success",
+          "model": "claude-haiku-4-5",
+          "toolUses": 7,
+          "tokens": 18240,
+          "durationMs": 21050,
+          "result": "4 files import test-utils; only router.test.ts imports it after the router itself."
+        }
+      }
+    }
+  },
+  "expect": "accept"
+}

@@ -1,0 +1,13 @@
+{
+  "direction": "server->runner",
+  "frame": {
+    "id": "cmd_sp45abc",
+    "type": "session.setPermissionMode",
+    "sessionId": "ags_c1abc",
+    "ts": "2026-07-06T18:11:20.000Z",
+    "payload": {
+      "mode": "acceptEdits"
+    }
+  },
+  "expect": "accept"
+}

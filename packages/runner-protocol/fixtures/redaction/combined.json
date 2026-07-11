@@ -1,0 +1,17 @@
+{
+  "label": "combined",
+  "cases": [
+    {
+      "name": "env dump with several secret shapes",
+      "input": "AWS_KEY=AKIAIOSFODNN7EXAMPLE\nexport GH_TOKEN=ghp_AbCdEfGhIjKlMnOpQrStUvWxYz0123456789\nANTHROPIC_API_KEY=sk-ant-api03-AbCdEfGhIjKlMnOpQrStUv\nPLAIN=ok",
+      "expected": "AWS_KEY=[redacted:aws-key-id]\nexport GH_TOKEN=[redacted:env-assignment]\nANTHROPIC_API_KEY=[redacted:env-assignment]\nPLAIN=ok",
+      "note": "env-assignment wins for *_TOKEN/*_API_KEY names (applied before key-shape patterns); AWS_KEY does not match the var-name list so the AKIA shape fires on the value"
+    },
+    {
+      "name": "session key wins before patterns",
+      "input": "token yk_live_agsn_9tYbQ2mPzX4vK8wL and unrelated yk_live_other0123456",
+      "expected": "token [redacted:session-key] and unrelated [redacted:yasui-key]",
+      "sessionSecrets": ["yk_live_agsn_9tYbQ2mPzX4vK8wL"]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "direction": "runner->server",
+  "frame": {
+    "id": "f_9m2k4x8w1q",
+    "type": "hello",
+    "ts": "2026-07-06T18:02:11.480Z",
+    "payload": {
+      "protocolVersion": 1,
+      "minProtocolVersion": 1,
+      "runnerVersion": "0.3.1",
+      "host": {
+        "hostname": "atlas",
+        "os": "darwin",
+        "arch": "arm64",
+        "kind": "laptop",
+        "locationHint": "fra1 · hetzner"
+      },
+      "harnesses": [
+        {
+          "harness": "claude-code",
+          "version": "2.1.201",
+          "sdkVersion": "0.3.150"
+        }
+      ],
+      "caps": [
+        "git",
+        "worktrees",
+        "delta-streaming",
+        "self-update"
+      ],
+      "maxConcurrentSessions": 4,
+      "resume": []
+    }
+  },
+  "expect": "accept"
+}

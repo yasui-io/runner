@@ -1,0 +1,12 @@
+{
+  "direction": "runner->server",
+  "frame": {
+    "id": "f_1",
+    "type": "heartbeat",
+    "ts": "2026-07-06T18:02:31.481Z",
+    "payload": {
+      "activeSessions": 0
+    }
+  },
+  "expect": "reject"
+}

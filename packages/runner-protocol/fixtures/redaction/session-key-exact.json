@@ -1,0 +1,17 @@
+{
+  "label": "session-key-exact",
+  "cases": [
+    {
+      "name": "literal session inference key in echoed env",
+      "input": "ANTHROPIC_AUTH_TOKEN is yk_live_agsn_9tYbQ2mPzX4vK8wL and it leaked into tool output",
+      "expected": "ANTHROPIC_AUTH_TOKEN is [redacted:session-key] and it leaked into tool output",
+      "sessionSecrets": ["yk_live_agsn_9tYbQ2mPzX4vK8wL"]
+    },
+    {
+      "name": "session key appears twice",
+      "input": "first yk_live_agsn_9tYbQ2mPzX4vK8wL then again yk_live_agsn_9tYbQ2mPzX4vK8wL",
+      "expected": "first [redacted:session-key] then again [redacted:session-key]",
+      "sessionSecrets": ["yk_live_agsn_9tYbQ2mPzX4vK8wL"]
+    }
+  ]
+}

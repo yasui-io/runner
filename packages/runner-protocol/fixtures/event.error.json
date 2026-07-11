@@ -1,0 +1,19 @@
+{
+  "direction": "runner->server",
+  "frame": {
+    "id": "f_e456ffff",
+    "type": "event",
+    "sessionId": "ags_c1abc",
+    "ts": "2026-07-06T18:05:50.000Z",
+    "payload": {
+      "event": {
+        "id": "ev_er01",
+        "at": "2026-07-06T18:05:49.000Z",
+        "kind": "error",
+        "text": "Harness subprocess exited unexpectedly (code 137).",
+        "final": true
+      }
+    }
+  },
+  "expect": "accept"
+}

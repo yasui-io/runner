@@ -1,0 +1,34 @@
+{
+  "direction": "runner->server",
+  "frame": {
+    "id": "f_e449dddd",
+    "type": "event",
+    "sessionId": "ags_c1abc",
+    "ts": "2026-07-06T18:03:30.000Z",
+    "payload": {
+      "event": {
+        "id": "ev_td01",
+        "at": "2026-07-06T18:03:29.500Z",
+        "kind": "todo",
+        "todos": [
+          {
+            "id": "t1",
+            "text": "Reproduce the flaky failure",
+            "status": "completed"
+          },
+          {
+            "id": "t2",
+            "text": "Fix import ordering in router.test.ts",
+            "status": "in_progress"
+          },
+          {
+            "id": "t3",
+            "text": "Add a regression test for the 404 path",
+            "status": "pending"
+          }
+        ]
+      }
+    }
+  },
+  "expect": "accept"
+}

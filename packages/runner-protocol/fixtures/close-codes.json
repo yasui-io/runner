@@ -1,0 +1,30 @@
+{
+  "closeCodes": {
+    "normal": 1000,
+    "serverRestarting": 1012,
+    "serverOverloaded": 1013,
+    "unauthorized": 4001,
+    "protocolVersionUnsupported": 4002,
+    "duplicateConnection": 4003,
+    "rateLimited": 4004,
+    "protocolViolation": 4008,
+    "frameTooLarge": 4009,
+    "runnerDeleted": 4013
+  },
+  "errorCodes": {
+    "relayUnauthorized": "yasui_relay_unauthorized",
+    "relayOriginRejected": "yasui_relay_origin_rejected",
+    "relayProtocolVersion": "yasui_relay_protocol_version",
+    "relayMalformedFrame": "yasui_relay_malformed_frame",
+    "relayUnknownSession": "yasui_relay_unknown_session",
+    "relayFrameTooLarge": "yasui_relay_frame_too_large",
+    "relayRateLimited": "yasui_relay_rate_limited",
+    "relayDuplicateConnection": "yasui_relay_duplicate_connection",
+    "runnerOffline": "yasui_runner_offline",
+    "runnerHarnessUnavailable": "yasui_runner_harness_unavailable",
+    "runnerProjectNotFound": "yasui_runner_project_not_found",
+    "runnerSessionLimit": "yasui_runner_session_limit",
+    "runnerGitFailed": "yasui_runner_git_failed",
+    "runnerInternal": "yasui_runner_internal"
+  }
+}

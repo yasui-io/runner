@@ -1,0 +1,34 @@
+{
+  "direction": "server->runner",
+  "frame": {
+    "id": "cmd_s9bbbb",
+    "type": "session.start",
+    "sessionId": "ags_c2def",
+    "ts": "2026-07-06T19:00:00.000Z",
+    "payload": {
+      "harness": "claude-code",
+      "project": {
+        "path": "/Users/kai/dev/acme-api",
+        "projectId": "prj_ck3abcd"
+      },
+      "worktree": {
+        "create": true,
+        "name": "fix-router"
+      },
+      "model": "claude-opus-4-8",
+      "contextWindowTokens": 200000,
+      "permissionMode": "acceptEdits",
+      "permissionTimeoutMinutes": 30,
+      "systemPromptAppend": "Prefer bun test over npm test.",
+      "maxTurns": 120,
+      "maxBudgetUsd": 25,
+      "resumeHarnessSessionId": "6f1c2a4e-9b7d-4c31-a2f8-0e5d6c7b8a90",
+      "inference": {
+        "baseUrl": "https://api.yasui.io",
+        "authToken": "yk_live_agsn_8xWaEXAMPLE",
+        "expiresAt": "2026-07-07T19:00:00Z"
+      }
+    }
+  },
+  "expect": "accept"
+}

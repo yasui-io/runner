@@ -1,0 +1,14 @@
+{
+  "direction": "runner->server",
+  "frame": {
+    "id": "f_hb01a2b3c4",
+    "type": "heartbeat",
+    "ts": "2026-07-06T18:02:31.481Z",
+    "payload": {
+      "activeSessions": 1,
+      "load1": 2.4,
+      "freeMemMb": 9182
+    }
+  },
+  "expect": "accept"
+}

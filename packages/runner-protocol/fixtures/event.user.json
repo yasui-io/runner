@@ -1,0 +1,19 @@
+{
+  "direction": "runner->server",
+  "frame": {
+    "id": "f_e100aaaa",
+    "type": "event",
+    "sessionId": "ags_c1abc",
+    "ts": "2026-07-06T18:02:40.000Z",
+    "payload": {
+      "event": {
+        "id": "ev_u001",
+        "at": "2026-07-06T18:02:39.980Z",
+        "kind": "user",
+        "text": "Fix the flaky router test.",
+        "clientId": "cl_9a8b7c"
+      }
+    }
+  },
+  "expect": "accept"
+}

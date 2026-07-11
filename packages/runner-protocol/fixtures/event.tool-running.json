@@ -1,0 +1,24 @@
+{
+  "direction": "runner->server",
+  "frame": {
+    "id": "f_e445cccc",
+    "type": "event",
+    "sessionId": "ags_c1abc",
+    "ts": "2026-07-06T18:03:10.000Z",
+    "payload": {
+      "event": {
+        "id": "ev_tl11",
+        "at": "2026-07-06T18:03:09.900Z",
+        "kind": "tool",
+        "call": {
+          "id": "toolu_01AbC",
+          "name": "Bash",
+          "summary": "bun test src/router.test.ts",
+          "status": "running",
+          "input": "bun test src/router.test.ts --reporter verbose"
+        }
+      }
+    }
+  },
+  "expect": "accept"
+}

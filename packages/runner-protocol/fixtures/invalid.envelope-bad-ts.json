@@ -1,0 +1,12 @@
+{
+  "direction": "runner->server",
+  "frame": {
+    "id": "f_bad00002",
+    "type": "heartbeat",
+    "ts": "yesterday around six",
+    "payload": {
+      "activeSessions": 0
+    }
+  },
+  "expect": "reject"
+}

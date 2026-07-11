@@ -1,0 +1,15 @@
+{
+  "label": "bearer-header",
+  "cases": [
+    {
+      "name": "authorization header keeps its prefix",
+      "input": "> authorization: bearer abc.def.ghi-jkl",
+      "expected": "> authorization: bearer [redacted:bearer-header]"
+    },
+    {
+      "name": "case-insensitive",
+      "input": "Authorization: Bearer SOMETOKENVALUE",
+      "expected": "Authorization: Bearer [redacted:bearer-header]"
+    }
+  ]
+}

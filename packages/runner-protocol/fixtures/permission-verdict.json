@@ -1,0 +1,30 @@
+{
+  "direction": "server->runner",
+  "frame": {
+    "id": "cmd_p77abcd",
+    "type": "permission.verdict",
+    "sessionId": "ags_c1abc",
+    "ts": "2026-07-06T18:05:01.000Z",
+    "payload": {
+      "permissionEventId": "ev_pm31",
+      "toolUseId": "toolu_01StU",
+      "behavior": "allow",
+      "message": null,
+      "updatedInput": null,
+      "appliedSuggestions": [
+        {
+          "type": "addRules",
+          "rules": [
+            {
+              "toolName": "Bash",
+              "ruleContent": "git push:*"
+            }
+          ],
+          "behavior": "allow",
+          "destination": "session"
+        }
+      ]
+    }
+  },
+  "expect": "accept"
+}

@@ -1,0 +1,13 @@
+{
+  "direction": "runner->server",
+  "frame": {
+    "id": "f_rc01oooo",
+    "type": "runner.config",
+    "ts": "2026-07-06T18:02:12.000Z",
+    "payload": {
+      "allowBypassPermissions": false,
+      "redactionEnabled": true
+    }
+  },
+  "expect": "accept"
+}

@@ -1,0 +1,18 @@
+{
+  "direction": "server->runner",
+  "frame": {
+    "id": "cmd_p78abcd",
+    "type": "permission.verdict",
+    "sessionId": "ags_c1abc",
+    "ts": "2026-07-06T18:20:29.000Z",
+    "payload": {
+      "permissionEventId": "ev_pm32",
+      "toolUseId": "toolu_01VwX",
+      "behavior": "deny",
+      "message": "Permission request timed out.",
+      "updatedInput": null,
+      "appliedSuggestions": []
+    }
+  },
+  "expect": "accept"
+}

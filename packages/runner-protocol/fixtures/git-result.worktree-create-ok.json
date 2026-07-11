@@ -1,0 +1,24 @@
+{
+  "direction": "runner->server",
+  "frame": {
+    "id": "f_gr58mmmm",
+    "type": "git.result",
+    "sessionId": "ags_c1abc",
+    "ts": "2026-07-06T18:06:40.000Z",
+    "payload": {
+      "opId": "op_ckbabc",
+      "op": "worktree.create",
+      "ok": true,
+      "result": {
+        "worktree": {
+          "name": "fix-router",
+          "branch": "fix-router",
+          "path": "/Users/kai/dev/acme-api/.worktrees/fix-router",
+          "dirty": false,
+          "current": false
+        }
+      }
+    }
+  },
+  "expect": "accept"
+}

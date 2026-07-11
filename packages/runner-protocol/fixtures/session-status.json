@@ -1,0 +1,13 @@
+{
+  "direction": "runner->server",
+  "frame": {
+    "id": "f_ss22iiii",
+    "type": "session.status",
+    "sessionId": "ags_c1abc",
+    "ts": "2026-07-06T18:04:09.950Z",
+    "payload": {
+      "status": "awaiting-permission"
+    }
+  },
+  "expect": "accept"
+}

@@ -1,0 +1,13 @@
+{
+  "direction": "server->runner",
+  "frame": {
+    "id": "cmd_sm44abc",
+    "type": "session.setModel",
+    "sessionId": "ags_c1abc",
+    "ts": "2026-07-06T18:11:10.000Z",
+    "payload": {
+      "model": "claude-opus-4-8"
+    }
+  },
+  "expect": "accept"
+}

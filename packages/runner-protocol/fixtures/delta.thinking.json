@@ -1,0 +1,16 @@
+{
+  "direction": "runner->server",
+  "frame": {
+    "id": "f_d818gggg",
+    "type": "delta",
+    "sessionId": "ags_c1abc",
+    "ts": "2026-07-06T18:02:51.300Z",
+    "payload": {
+      "target": "thinking",
+      "eventId": "ev_th02",
+      "offset": 0,
+      "text": "The test only fails when run after"
+    }
+  },
+  "expect": "accept"
+}

@@ -1,0 +1,17 @@
+{
+  "direction": "runner->server",
+  "frame": {
+    "id": "f_d819gggg",
+    "type": "delta",
+    "sessionId": "ags_c1abc",
+    "ts": "2026-07-06T18:03:11.000Z",
+    "payload": {
+      "target": "tool-output",
+      "eventId": "ev_tl11",
+      "toolCallId": "toolu_01AbC",
+      "offset": 128,
+      "text": "✓ router resolves /health\n"
+    }
+  },
+  "expect": "accept"
+}

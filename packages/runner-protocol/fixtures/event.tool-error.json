@@ -1,0 +1,27 @@
+{
+  "direction": "runner->server",
+  "frame": {
+    "id": "f_e447cccc",
+    "type": "event",
+    "sessionId": "ags_c1abc",
+    "ts": "2026-07-06T18:03:20.000Z",
+    "payload": {
+      "event": {
+        "id": "ev_tl13",
+        "at": "2026-07-06T18:03:18.000Z",
+        "kind": "tool",
+        "final": true,
+        "call": {
+          "id": "toolu_01GhI",
+          "name": "Bash",
+          "summary": "bun test",
+          "status": "error",
+          "durationMs": 5120,
+          "output": "1 fail, 41 pass",
+          "errorText": "exit code 1"
+        }
+      }
+    }
+  },
+  "expect": "accept"
+}

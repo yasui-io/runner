@@ -1,0 +1,24 @@
+{
+  "direction": "runner->server",
+  "frame": {
+    "id": "f_bad00008",
+    "type": "event",
+    "sessionId": "ags_c1abc",
+    "ts": "2026-07-06T18:04:10.000Z",
+    "payload": {
+      "event": {
+        "id": "ev_pm99",
+        "at": "2026-07-06T18:04:09.900Z",
+        "kind": "permission",
+        "tool": "Bash",
+        "request": "rm -rf /",
+        "status": "pending",
+        "input": {
+          "command": "rm -rf /"
+        },
+        "expiresAt": "2026-07-06T18:19:09.900Z"
+      }
+    }
+  },
+  "expect": "reject"
+}

@@ -1,0 +1,36 @@
+{
+  "direction": "runner->server",
+  "frame": {
+    "id": "f_gr55mmmm",
+    "type": "git.result",
+    "sessionId": "ags_c1abc",
+    "ts": "2026-07-06T18:06:10.000Z",
+    "payload": {
+      "opId": "op_ck7abc",
+      "op": "diff.file",
+      "ok": true,
+      "result": {
+        "path": "src/router.ts",
+        "status": "modified",
+        "additions": 96,
+        "deletions": 30,
+        "hunks": [
+          {
+            "header": "@@ -12,6 +12,9 @@",
+            "lines": [
+              {
+                "kind": "ctx",
+                "text": "import { Hono } from 'hono'"
+              },
+              {
+                "kind": "add",
+                "text": "import { z } from 'zod'"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "expect": "accept"
+}

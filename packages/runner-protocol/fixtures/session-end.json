@@ -1,0 +1,13 @@
+{
+  "direction": "server->runner",
+  "frame": {
+    "id": "cmd_e59abcd",
+    "type": "session.end",
+    "sessionId": "ags_c1abc",
+    "ts": "2026-07-06T18:19:55.000Z",
+    "payload": {
+      "reason": "user"
+    }
+  },
+  "expect": "accept"
+}

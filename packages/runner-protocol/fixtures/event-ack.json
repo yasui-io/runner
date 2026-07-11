@@ -1,0 +1,23 @@
+{
+  "direction": "server->runner",
+  "frame": {
+    "id": "f_ea70g6h7i",
+    "type": "event.ack",
+    "ts": "2026-07-06T18:03:04.000Z",
+    "payload": {
+      "acks": [
+        {
+          "frameId": "f_e442bbbb",
+          "sessionId": "ags_c1abc",
+          "seq": 513
+        },
+        {
+          "frameId": "f_e443bbbb",
+          "sessionId": "ags_c1abc",
+          "seq": 514
+        }
+      ]
+    }
+  },
+  "expect": "accept"
+}

@@ -1,0 +1,18 @@
+{
+  "direction": "server->runner",
+  "frame": {
+    "id": "cmd_g56abcd",
+    "type": "git.request",
+    "sessionId": "ags_c1abc",
+    "ts": "2026-07-06T18:06:05.000Z",
+    "payload": {
+      "opId": "op_ck7abc",
+      "op": "diff.file",
+      "args": {
+        "path": "/Users/kai/dev/acme-api",
+        "file": "src/router.ts"
+      }
+    }
+  },
+  "expect": "accept"
+}

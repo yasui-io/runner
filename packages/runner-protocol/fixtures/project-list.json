@@ -1,0 +1,23 @@
+{
+  "direction": "runner->server",
+  "frame": {
+    "id": "f_pl12nnnn",
+    "type": "project.list",
+    "ts": "2026-07-06T18:07:00.000Z",
+    "payload": {
+      "opId": "op_ck8abc",
+      "projects": [
+        {
+          "path": "/Users/kai/dev/acme-api",
+          "name": "acme-api",
+          "branch": "main",
+          "dirty": false,
+          "remoteUrl": "git@github.com:acme/api.git",
+          "trusted": false,
+          "lastCommitAt": "2026-07-05T21:10:00Z"
+        }
+      ]
+    }
+  },
+  "expect": "accept"
+}

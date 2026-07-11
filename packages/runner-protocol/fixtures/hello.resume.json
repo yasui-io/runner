@@ -1,0 +1,41 @@
+{
+  "direction": "runner->server",
+  "frame": {
+    "id": "f_9m2k4x8w2r",
+    "type": "hello",
+    "ts": "2026-07-06T18:02:11.480Z",
+    "payload": {
+      "protocolVersion": 1,
+      "minProtocolVersion": 1,
+      "runnerVersion": "0.3.1",
+      "host": {
+        "hostname": "atlas",
+        "os": "linux",
+        "arch": "x64",
+        "kind": "vps"
+      },
+      "harnesses": [
+        {
+          "harness": "claude-code",
+          "version": "2.1.201",
+          "sdkVersion": "0.3.150"
+        }
+      ],
+      "caps": [
+        "git",
+        "worktrees",
+        "delta-streaming"
+      ],
+      "maxConcurrentSessions": 2,
+      "resume": [
+        {
+          "sessionId": "ags_c1abc",
+          "lastAppliedInputSeq": 214,
+          "bufferedEventFrames": 3,
+          "status": "working"
+        }
+      ]
+    }
+  },
+  "expect": "accept"
+}

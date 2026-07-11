@@ -1,0 +1,26 @@
+{
+  "direction": "runner->server",
+  "frame": {
+    "id": "f_e453eeee",
+    "type": "event",
+    "sessionId": "ags_c1abc",
+    "ts": "2026-07-06T18:05:02.000Z",
+    "payload": {
+      "event": {
+        "id": "ev_pm31",
+        "at": "2026-07-06T18:04:09.900Z",
+        "kind": "permission",
+        "tool": "Bash",
+        "request": "git push origin main",
+        "status": "approved",
+        "toolUseId": "toolu_01StU",
+        "input": {
+          "command": "git push origin main"
+        },
+        "expiresAt": "2026-07-06T18:19:09.900Z",
+        "final": true
+      }
+    }
+  },
+  "expect": "accept"
+}

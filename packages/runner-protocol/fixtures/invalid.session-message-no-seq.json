@@ -1,0 +1,14 @@
+{
+  "direction": "server->runner",
+  "frame": {
+    "id": "cmd_m98abcd",
+    "type": "session.message",
+    "sessionId": "ags_c1abc",
+    "ts": "2026-07-06T18:12:00.000Z",
+    "payload": {
+      "eventId": "ev_u519",
+      "text": "hello"
+    }
+  },
+  "expect": "reject"
+}

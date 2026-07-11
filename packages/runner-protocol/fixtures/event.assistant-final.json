@@ -1,0 +1,19 @@
+{
+  "direction": "runner->server",
+  "frame": {
+    "id": "f_e443bbbb",
+    "type": "event",
+    "sessionId": "ags_c1abc",
+    "ts": "2026-07-06T18:03:06.100Z",
+    "payload": {
+      "event": {
+        "id": "ev_as09",
+        "at": "2026-07-06T18:03:01.002Z",
+        "kind": "assistant",
+        "text": "Looking at the stack trace, the failing test imports the router before its mock is registered. I will reorder the imports.",
+        "final": true
+      }
+    }
+  },
+  "expect": "accept"
+}

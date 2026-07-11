@@ -1,0 +1,18 @@
+{
+  "direction": "runner->server",
+  "frame": {
+    "id": "f_us73jjjj",
+    "type": "session.stats",
+    "sessionId": "ags_c1abc",
+    "ts": "2026-07-06T18:04:20.000Z",
+    "payload": {
+      "tokensIn": 48120,
+      "tokensOut": 9210,
+      "cacheReadTokens": 401770,
+      "contextUsedTokens": 61240,
+      "costUsd": 0.8114,
+      "turns": 9
+    }
+  },
+  "expect": "accept"
+}

@@ -1,0 +1,39 @@
+{
+  "direction": "runner->server",
+  "frame": {
+    "id": "f_e448cccc",
+    "type": "event",
+    "sessionId": "ags_c1abc",
+    "ts": "2026-07-06T18:03:25.000Z",
+    "payload": {
+      "event": {
+        "id": "ev_tg01",
+        "at": "2026-07-06T18:03:24.000Z",
+        "kind": "tool-group",
+        "calls": [
+          {
+            "id": "toolu_01JkL",
+            "name": "Read",
+            "summary": "src/router.ts",
+            "status": "success",
+            "durationMs": 45
+          },
+          {
+            "id": "toolu_01MnO",
+            "name": "Read",
+            "summary": "src/router.test.ts",
+            "status": "success",
+            "durationMs": 51
+          },
+          {
+            "id": "toolu_01PqR",
+            "name": "Grep",
+            "summary": "registerMock",
+            "status": "running"
+          }
+        ]
+      }
+    }
+  },
+  "expect": "accept"
+}

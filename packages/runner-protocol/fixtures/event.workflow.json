@@ -1,0 +1,44 @@
+{
+  "direction": "runner->server",
+  "frame": {
+    "id": "f_e451dddd",
+    "type": "event",
+    "sessionId": "ags_c1abc",
+    "ts": "2026-07-06T18:04:00.000Z",
+    "payload": {
+      "event": {
+        "id": "ev_wf01",
+        "at": "2026-07-06T18:03:55.000Z",
+        "kind": "workflow",
+        "name": "review-changes",
+        "status": "running",
+        "tokens": 51200,
+        "phases": [
+          {
+            "title": "Review",
+            "agents": [
+              {
+                "label": "review:bugs",
+                "status": "success"
+              },
+              {
+                "label": "review:perf",
+                "status": "running"
+              }
+            ]
+          },
+          {
+            "title": "Verify",
+            "agents": [
+              {
+                "label": "verify:src/router.ts",
+                "status": "pending"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "expect": "accept"
+}

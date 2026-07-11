@@ -1,0 +1,16 @@
+{
+  "direction": "server->runner",
+  "frame": {
+    "id": "f_srverr01",
+    "type": "error",
+    "ts": "2026-07-06T18:41:00.000Z",
+    "payload": {
+      "code": "yasui_relay_rate_limited",
+      "message": "Inbound frame rate limit exceeded (500 frames / 10 s).",
+      "details": {
+        "retryAfterMs": 30000
+      }
+    }
+  },
+  "expect": "accept"
+}

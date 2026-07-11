@@ -1,0 +1,16 @@
+{
+  "label": "aws-key-id",
+  "cases": [
+    {
+      "name": "bare access key id",
+      "input": "aws_access_key_id = AKIAIOSFODNN7EXAMPLE",
+      "expected": "aws_access_key_id = [redacted:aws-key-id]",
+      "note": "the var name does not match the env-assignment SECRET|TOKEN|... list, so only the AKIA pattern fires"
+    },
+    {
+      "name": "not a key id (too short)",
+      "input": "AKIA123 is not a key",
+      "expected": "AKIA123 is not a key"
+    }
+  ]
+}

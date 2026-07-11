@@ -1,0 +1,62 @@
+# CI for yasui-io/runner (04 §1/§2, 08 Phase D):
+# typecheck, unit tests, fixture conformance, zero-yasui-imports check,
+# macOS + Linux matrix.
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  no-yasui-imports:
+    name: zero yasui monorepo imports
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # The ONLY @yasui/* dependency allowed is @yasui.io/runner-protocol (04 §2).
+      - name: grep for forbidden imports
+        run: |
+          set -eu
+          if grep -rE "@yasui/(sdk|api|web)|yasui\.io/apps" packages/ --include='*.ts' --include='*.json' --exclude-dir=node_modules; then
+            echo "forbidden Yasui monorepo import found" >&2
+            exit 1
+          fi
+          echo "clean"
+      - name: dependency allowlist lint
+        run: |
+          set -eu
+          node -e '
+            const allowed = new Set(["@anthropic-ai/claude-agent-sdk","@yasui.io/runner-protocol","commander","pino","ws","zod"]);
+            const pkg = require("./packages/runner/package.json");
+            const bad = Object.keys(pkg.dependencies ?? {}).filter((d) => !allowed.has(d));
+            if (bad.length) { console.error("disallowed runtime deps:", bad); process.exit(1); }
+            const protoAllowed = new Set(["zod"]);
+            const proto = require("./packages/runner-protocol/package.json");
+            const badProto = Object.keys(proto.dependencies ?? {}).filter((d) => !protoAllowed.has(d));
+            if (badProto.length) { console.error("disallowed protocol deps:", badProto); process.exit(1); }
+            console.log("dependency allowlist ok");
+          '
+
+  test:
+    name: typecheck + tests (${{ matrix.os }})
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: 1.3.14
+      - name: install
+        run: bun install --frozen-lockfile
+      - name: typecheck
+        run: bun run typecheck
+      - name: protocol fixture conformance
+        run: bun --cwd packages/runner-protocol test
+      - name: runner unit tests (incl. redaction fixtures)
+        run: bun --cwd packages/runner test
+      - name: CLI smoke
+        run: bun packages/runner/src/cli/index.ts --help

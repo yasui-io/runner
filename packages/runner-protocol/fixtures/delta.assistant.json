@@ -1,0 +1,16 @@
+{
+  "direction": "runner->server",
+  "frame": {
+    "id": "f_d817gggg",
+    "type": "delta",
+    "sessionId": "ags_c1abc",
+    "ts": "2026-07-06T18:03:02.114Z",
+    "payload": {
+      "target": "assistant",
+      "eventId": "ev_as09",
+      "offset": 41,
+      "text": " the failing test imports"
+    }
+  },
+  "expect": "accept"
+}

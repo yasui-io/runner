@@ -1,0 +1,15 @@
+{
+  "direction": "runner->server",
+  "frame": {
+    "id": "f_en90llll",
+    "type": "session.ended",
+    "sessionId": "ags_c1abc",
+    "ts": "2026-07-06T18:20:00.000Z",
+    "payload": {
+      "reason": "completed",
+      "resultSummary": "Fixed the flaky router test; 3 files changed.",
+      "errorText": null
+    }
+  },
+  "expect": "accept"
+}

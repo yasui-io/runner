@@ -1,0 +1,19 @@
+{
+  "direction": "runner->server",
+  "frame": {
+    "id": "f_e455ffff",
+    "type": "event",
+    "sessionId": "ags_c1abc",
+    "ts": "2026-07-06T18:05:40.000Z",
+    "payload": {
+      "event": {
+        "id": "ev_sy01",
+        "at": "2026-07-06T18:05:39.000Z",
+        "kind": "system",
+        "variant": "model-change",
+        "text": "Model changed to claude-opus-4-8."
+      }
+    }
+  },
+  "expect": "accept"
+}

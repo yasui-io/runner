@@ -1,0 +1,20 @@
+{
+  "direction": "runner->server",
+  "frame": {
+    "id": "f_gr57mmmm",
+    "type": "git.result",
+    "sessionId": "ags_c1abc",
+    "ts": "2026-07-06T18:06:30.000Z",
+    "payload": {
+      "opId": "op_ckaabc",
+      "op": "push",
+      "ok": false,
+      "error": {
+        "code": "yasui_runner_git_failed",
+        "message": "git push failed",
+        "stderr": "remote: Permission to acme/api.git denied to kai.\nfatal: unable to access 'https://github.com/acme/api.git/': The requested URL returned error: 403"
+      }
+    }
+  },
+  "expect": "accept"
+}

@@ -1,0 +1,19 @@
+{
+  "direction": "runner->server",
+  "frame": {
+    "id": "f_e101aaaa",
+    "type": "event",
+    "sessionId": "ags_c1abc",
+    "ts": "2026-07-06T18:02:41.000Z",
+    "payload": {
+      "event": {
+        "id": "ev_x001",
+        "at": "2026-07-06T18:02:40.980Z",
+        "kind": "slash",
+        "command": "compact",
+        "note": "Context compacted to 41k tokens."
+      }
+    }
+  },
+  "expect": "accept"
+}

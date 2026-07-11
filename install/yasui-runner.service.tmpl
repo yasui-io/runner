@@ -1,0 +1,13 @@
+[Unit]
+Description=Yasui runner — https://github.com/yasui-io/runner
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+ExecStart=%h/.yasui-runner/bin/yasui-runner start --foreground
+Restart=on-failure
+RestartSec=5
+Environment=YASUI_RUNNER_HOME=%h/.yasui-runner
+
+[Install]
+WantedBy=default.target

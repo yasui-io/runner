@@ -1,0 +1,17 @@
+{
+  "direction": "server->runner",
+  "frame": {
+    "id": "cmd_x99abcd",
+    "type": "session.slash",
+    "sessionId": "ags_c1abc",
+    "seq": 518,
+    "ts": "2026-07-06T18:12:10.000Z",
+    "payload": {
+      "eventId": "ev_u518",
+      "command": "review",
+      "args": null,
+      "attachments": []
+    }
+  },
+  "expect": "reject"
+}

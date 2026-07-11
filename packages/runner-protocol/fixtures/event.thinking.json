@@ -1,0 +1,20 @@
+{
+  "direction": "runner->server",
+  "frame": {
+    "id": "f_e444bbbb",
+    "type": "event",
+    "sessionId": "ags_c1abc",
+    "ts": "2026-07-06T18:02:55.000Z",
+    "payload": {
+      "event": {
+        "id": "ev_th02",
+        "at": "2026-07-06T18:02:50.100Z",
+        "kind": "thinking",
+        "text": "The test only fails when run after auth.test.ts — suggests shared module state.",
+        "durationMs": 4820,
+        "final": true
+      }
+    }
+  },
+  "expect": "accept"
+}

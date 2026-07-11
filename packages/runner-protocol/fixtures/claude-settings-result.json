@@ -1,0 +1,20 @@
+{
+  "direction": "runner->server",
+  "expect": "accept",
+  "frame": {
+    "id": "f_claude_settings_result_01",
+    "type": "claude.settings.result",
+    "ts": "2026-07-10T17:00:01.000Z",
+    "payload": {
+      "opId": "op_claude_settings_01",
+      "action": "get",
+      "target": "native-user",
+      "ok": true,
+      "settings": { "env": { "ANTHROPIC_API_KEY": null } },
+      "revision": "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
+      "exists": true,
+      "modifiedAt": "2026-07-10T16:59:00.000Z",
+      "redactedPaths": [["env", "ANTHROPIC_API_KEY"]]
+    }
+  }
+}
