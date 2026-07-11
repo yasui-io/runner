@@ -62,7 +62,7 @@ jobs:
             -e "s|__RELEASE_YML_PIN_LINUX_ARM64__|$(pin linux-arm64)|" \
             -e "s|__RELEASE_YML_PIN_LINUX_X64__|$(pin linux-x64)|" \
             install/runner.sh
-          grep -q "__RELEASE_YML_PIN" install/runner.sh && { echo "pin substitution failed" >&2; exit 1; } || true
+          grep -q '="__RELEASE_YML_PIN_' install/runner.sh && { echo "pin substitution failed" >&2; exit 1; } || true
 
       - name: publish @yasui.io/runner-protocol
         run: |
